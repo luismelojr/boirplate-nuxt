@@ -5,7 +5,8 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@primevue/nuxt-module',
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+      '@nuxtjs/google-fonts'
   ],
   primevue: {
     options: {
@@ -13,5 +14,13 @@ export default defineNuxtConfig({
     },
     importPT: {from: path.resolve(__dirname, './assets/presets/lara')}
   },
-  css: ['primeicons/primeicons.css']
+  css: ['primeicons/primeicons.css'],
+  googleFonts: {
+    base64: true,
+    fontsDir: 'assets/fonts',
+    overwriting: true,
+    families: {
+      Inter: [300, 500, 800]
+    }
+  }
 })
