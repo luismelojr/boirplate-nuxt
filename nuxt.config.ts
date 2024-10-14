@@ -12,5 +12,6 @@ export default defineNuxtConfig({
       unstyled: true
     },
     importPT: {from: path.resolve(__dirname, './assets/presets/lara')}
-  }
+  },
+  css: ['primeicons/primeicons.css']
 })

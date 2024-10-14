@@ -1,10 +1,12 @@
 <script setup>
-import Button from 'primevue/button';
+const value = ref('')
 </script>
 
 <template>
-  <div>
-    <h1 class="text-primary-500">Hello</h1>
-    <Button label="Teste" size="small"/>
+  <div class="flex gap-4 flex-col justify-center h-full w-full bg-primary-50 items-center">
+    <h1>Poirplate</h1>
+    <DatePicker v-model="value" />
+    <p>{{value}}</p>
+    <Button label="Profile" icon="pi pi-user" />
   </div>
 </template>
