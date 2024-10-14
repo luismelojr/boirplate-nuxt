@@ -1,18 +1,18 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import path from 'path'
+import path from 'path';
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
   modules: [
     '@primevue/nuxt-module',
     '@nuxtjs/tailwindcss',
-      '@nuxtjs/google-fonts'
+    '@nuxtjs/google-fonts',
   ],
   primevue: {
     options: {
-      unstyled: true
+      unstyled: true,
     },
-    importPT: {from: path.resolve(__dirname, './assets/presets/lara')}
+    importPT: { from: path.resolve(__dirname, './assets/presets/lara') },
   },
   css: ['primeicons/primeicons.css'],
   googleFonts: {
@@ -20,7 +20,7 @@ export default defineNuxtConfig({
     fontsDir: 'assets/fonts',
     overwriting: true,
     families: {
-      Inter: [300, 500, 800]
-    }
-  }
-})
+      Inter: [300, 500, 800],
+    },
+  },
+});
